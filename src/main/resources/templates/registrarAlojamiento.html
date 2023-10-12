@@ -15,28 +15,35 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Alojamientos</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+      <!-- input para buscar alojamiento por nombre -->
+      <form class="d-flex mt-2" role="search" th:action="@{/buscar}">
+
+        <!-- importante especificar el th:name para que lo pueda usar el controller "/buscar" en su parámetro -->
+        <input class="form-control me-2" type="search" placeholder="Search" th:name="nombreAlojamiento">
+
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-end">
         <li class="nav-item">
-          <a class="nav-link bg-info text-white" href="/registrar_alojamiento">Registrar Alojamiento</a>
+          <a class="nav-link text-danger" aria-current="page" href="/modificar_alojamiento">Modificar Alojamiento</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/registrar_alojamiento">Agregar alojamiento</a>
+        </li>
+
       </ul>
+
+
     </div>
-
-
-
   </div>
 </nav>
-
 <div class="container d-flex justify-content-center mt-3">
   <div class="w-50 h1 bg-info text-white p-2 text-center">Registrar Alojamiento</div>
 </div>
