@@ -1,0 +1,5 @@
+com\Alojamientos\alojamientos\Service\AlojamientoService.class
+com\Alojamientos\alojamientos\AlojamientosApplication.class
+com\Alojamientos\alojamientos\Controller\AlojamientoController.class
+com\Alojamientos\alojamientos\Entity\Alojamiento.class
+com\Alojamientos\alojamientos\Repository\AlojamientoRepository.class
