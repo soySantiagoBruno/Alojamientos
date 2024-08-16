@@ -15,5 +15,8 @@ Se hizo uso de las dependencias **Spring Web**, **Spring Data JPA**, **Lombok**,
 Tecnologías usadas: 
 > Spring Boot, Hibernate, MySQL, Thymeleaf, Bootstrap.
 
+# Demo
+[Link al proyecto en deploy](https://alojamientos.onrender.com/) 
+Nota: Debido a que se encuentra en un hosting gratuito, puede demorar **un minuto** en cargar la primera vez
 
 ![](https://github.com/soySantiagoBruno/media-repo/blob/main/alojamientos%20uso.gif)
